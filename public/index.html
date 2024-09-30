@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome & Burger</title>
+    <link rel="stylesheet" href="./dist/output.css">
+  </head>
+  <body>
+    <header
+      class="hidden md:flex pt-2.5 pb-2.5 flex items-center justify-between mx-auto border-b flex-col lg:flex-row p-8 h-16">
+      <a href="#" class="hidden md:flex flex items-center font-semibold text-black">
+        <div class="flex items-center justify-center text-[32px] h-8 w-8">
+          <img src="images/ic-logo.svg" alt="logo"/>
+        </div>
+        <h1 class="text-2xl font-bold text-black">COLMAR</h1><h1 class="text-2xl font-light">ACADEMY</h1>
+      </a>
+      <nav class="flex justify-center w-full lg:w-auto">
+        <ul
+          id="menu"
+          class="hidden md:flex list-none gap-[32px] w-full md:w-auto md:flex-row md:items-center">
+          <li>
+            <a href="#" class=""
+              >On campus</a>
+          </li>
+          <li>
+            <a href="#" class=""
+              >On campus</a>
+          </li>
+          <li>
+            <a href="#" class=""
+              >Or companies</a>
+          </li>
+          <li>
+            <a href="#" class=""
+              >Sign in</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header class="md:hidden">
+        <nav class="grid grid-cols-4 justify-items-center pt-2.5 pb-2.5 ">
+            <img class="block md:hidden " src="images/ic-logo.svg">
+            <img class="block md:hidden" src="images/ic-on-campus.svg">
+            <img class="block md:hidden" src="images/ic-online.svg">
+            <img class="block md:hidden" src="images/ic-login.svg">
+        </nav>
+    </header>
+    <section id="home-desktop" class="hidden md:flex flex flex-row bg-[#d1cfcc] items-center">
+        <div class="basis-1/2 pt-8 pl-6 pb-8 pr-6">
+            <img src="images/banner.jpg"/>
+        </div>
+        <div class="basis-1/2 pl-8">
+          <p class="font-bold text-6xl">Learn something</p><p class="font-bold text-6xl">new everyday</p>
+          <br><p class="text-2xl">Lorem ipsum dolor sit amet</p><p class="text-2xl">consectetur, adipisicing elit.</p>
+          <br><button id="start_here" class="self-center bg-[#252525] p-3 w-56 text-white ite justify-items-center hover:bg-[#000000] cursor-pointer">Start here</button>
+        </div>
+    </section>
+    <section id="home-mobile"  class="md:hidden bg-[#d4d4d4]">
+      <div class="pt-8 pb-8 ">
+          <img src="images/banner.jpg"/>
+      </div>
+      <div id="Learn something" class="pb-8 pl-3 pr-3 flex flex-col  justify-center ">
+        <p class="font-bold text-5xl">Learn something</p><p class="font-bold text-5xl">new everyday</p>
+        <br><p class="text-2xl">Lorem ipsum dolor sit amet</p><p class="text-2xl">consectetur, adipisicing elit.</p>
+        <br><button id="start_here" class="self-center bg-[#252525] p-3 w-full text-white justify-items-center hover:to-black">Start here</button>
+      </div>
+    </section>
+    <section id="post-desktop" class="hidden md:flex">
+      <div id="semi-section1" class="w-[60%] pl-6 pt-8 pb-8 pr-6 h-1/2">
+        <div>
+          <img src="images/information-main.jpg " class="pb-8"/>
+        </div>
+        <div>
+          <h1 class="pt-6 pb-6 text-5xl font-bold">It doesn't hurt to keep practicing</h1>
+          <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo voluptatibus in amet cum, dolor corporis nihil eum eos optio, quam facere reprehenderit iste quis maxime esse maiores veritatis molestias tenetur."</p>
+          <br><p>Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+      </div>
+      <div id="semi-section2" class="grid grid-rows-3 p-2 pb-8 w-[40%] h-1/2">
+        <div class="flex flex-cols-2 border border-[#d8d8d8] pl-4 pr-4 hover:bg-[#c0c0c0]">
+          <div class="flex flex-col justify-center w-[35%] h-auto">
+            <img src="images/information-orientation.jpg" class=""/>
+          </div>
+          <div class="pl-6 self-center">
+            <h1 class="text-3xl font-bold ">Our campus</h1>
+            <p>Find which campus is close by you</p>
+            <button class="pt-4 font-bold text-xl text-blue-600">Read more</button>
+          </div>
+        </div>
+
+        <div class="flex flex-cols-2 border border-[#d8d8d8] pt-6 pb-6 pl-4 pr-4 h-full hover:bg-[#c0c0c0]">
+          <div class="flex flex-col justify-center w-[35%] h-auto">
+            <img src="images/information-campus.jpg" class=""/>
+          </div>
+          <div class="p-5">
+            <br>
+            <br>
+            <br>
+            <h1 class="text-3xl font-bold">Orientation date</h1>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <br><button class="pt-4 font-bold text-xl text-blue-600">Read more</button>
+          </div>
+        </div>
+
+        <div class="flex flex-cols-2 border border-[#d8d8d8] pt-6 pb-6 pl-4 pr-4 h-full hover:bg-[#c0c0c0]">
+          <div class="flex flex-col justify-center">
+            <img src="images/information-guest-lecture.jpg" class=""/>
+          </div>
+          <div class="p-5">
+            <br>
+            <br>
+            <br>
+            <h1 class="text-3xl font-bold">Our guest lecture</h1>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <br><button class="pt-4 font-bold text-xl text-blue-600">Read more</button>
+          </div>
+        </div>
+      </div>
+      <hr class="border-t border-gray-300 my-4">
+    </section>
+
+    <section id="post-mobile" class="md:hidden grid grid-rows-3">
+      <div class="flex flex-col pt-4 pl-4 pr-4 pb-16 hover:bg-[#d4d4d4]">
+        <img src="images/information-orientation-mobile.jpg" class="pb-6 cursor-pointer"/>
+        <h1 class="text-black font-bold text-3xl pb-1 pl-4 ">Orientation date</h1>
+        <p class="font-thin text-xl pb-1 pl-4">Tue 10/11 & Wed 10/12 8am-3pm</p>
+        <h1 class="text-blue-500 font-semibold text-xl pl-4 cursor-pointer">Read more</h1>
+      </div>
+      <div class="flex flex-col pt-4 pl-4 pr-4 hover:bg-[#d4d4d4]">
+        <img src="images/information-campus-mobile.jpg" class="pb-6 cursor-pointer"/>
+        <h1 class="text-black font-bold text-3xl pb-1 pl-4">Our campus</h1>
+        <p class="font-thin text-xl pb-1 pl-4">Find which campus is close by you</p>
+        <h1 class="text-blue-500 font-semibold text-xl pl-4 cursor-pointer">Read more</h1>
+      </div>
+      <div class="flex flex-col pt-4 pl-4 pr-4 pb-8 hover:bg-[#d4d4d4]">
+        <img src="images/information-guest-lecture-mobile.jpg" class="pb-6 cursor-pointer"/>
+        <h1 class="text-black font-bold text-3xl pb-1 pl-4">Our guest lecture</h1>
+        <p class="font-thin text-xl pb-1 pl-4">Join a keynote with Oliver Sack about music in medical treatment</p>
+        <h1 class="text-blue-500 font-semibold text-xl pl-4 cursor-pointer">Read more</h1>
+      </div>
+      
+    </section>
+    
+    <hr class="border-t border-gray-300 my-4 md:hidden">
+
+    <section id="Start learning-desktop" class="bg-[#e9e9e9] justify-center pb-8 hidden md:block">
+      <h1 class="text-5xl text-center pt-8 pb-8 font-bold">Start learning</h1>
+      <div class="grid grid-cols-3 gap-6 pl-20 pr-20">
+        <div class="flex flex-col bg-white rounded-xl shadow-lg hover:bg-[#c0c0c0] cursor-pointer">
+          <img src="images/course-software.jpg">
+          <br>
+          <p class="pl-4 font-bold text-3xl">Software engineering course</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">COURSES</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">Web Development, Mobile Development, iOT, APIs</p>
+          <br>
+          <br>
+        </div>
+        
+
+        <div class="flex flex-col bg-white rounded-xl shadow-lg cursor-pointers hover:bg-[#c0c0c0] cursor-pointer">
+          <img src="images/course-computer-art.jpg">
+          <br>
+          <p class="pl-4 font-bold text-3xl">Computer art</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">COURSES</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          <br>
+          <br>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl shadow-lg hover:bg-[#c0c0c0] cursor-pointer">
+          <img src="images/course-design.jpg">
+          <br>
+          <p class="pl-4 font-bold text-3xl">Design</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">COURSES</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">User Experience Design, User Research, Visual Design</p>
+          <br>
+          <br>
+        </div>
+        
+        <div class="flex flex-col bg-white rounded-xl shadow-lg hover:bg-[#c0c0c0] cursor-pointer">
+          <img src="images/course-data.jpg">
+          <br>
+          <p class="pl-4 font-bold text-3xl">Data</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">COURSES</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">Data Science, Big Data, SQL, Data Visualization</p>
+          <br>
+          <br>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl shadow-lg hover:bg-[#c0c0c0] cursor-pointer">
+          <img src="images/course-business.jpg">
+          <br>
+          <p class="pl-4 font-bold text-3xl">Business</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">COURSES</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">Product Development, Business Development, Startup</p>
+          <br>
+          <br>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl shadow-lg hover:bg-[#c0c0c0] cursor-pointer">
+          <img src="images/course-marketing.jpg">
+          <br>
+          <p class="pl-4 font-bold text-3xl">Marketing</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">COURSES</p>
+          <br>
+          <p class="pl-4 text-xl font-thin">Analytics, Content Marketing, Mobile Marketing</p>
+          <br>
+          <br>
+        </div>
+      </div>
+    </section>
+    
+    <section id="Start learning-mobile" class="grid grid-rows-7 pt-8 pb-8 pl-6 pr-6 md:hidden">
+      <div class=" flex justify-center pb-4">
+        <h1 class="font-bold text-5xl  justify-center-center">Start learning</h1>
+      </div>
+
+      <div class="cursor-pointer flex justify-center pb-4 ">
+        <h1 class="font-bold text-4xl  justify-center-center bg-[#e2e2e2] w-full pt-4 pb-6 pl-4 pr-4 hover:bg-black hover:text-white">Software engineering</h1>
+      </div>
+      <div class="cursor-pointer flex justify-center pb-4 ">
+        <h1 class="font-bold text-4xl  justify-center-center bg-[#e2e2e2] w-full pt-4 pb-6 pl-4 pr-4 hover:bg-black hover:text-white">Computer art</h1>
+      </div>
+      <div class="cursor-pointer flex justify-center pb-4 ">
+        <h1 class="font-bold text-4xl  justify-center-center bg-[#e2e2e2] w-full pt-4 pb-6 pl-4 pr-4 hover:bg-black hover:text-white">Design</h1>
+      </div>
+      <div class="cursor-pointer flex justify-center pb-4 ">
+        <h1 class="font-bold text-4xl  justify-center-center bg-[#e2e2e2] w-full pt-4 pb-6 pl-4 pr-4 hover:bg-black hover:text-white">Data</h1>
+      </div>
+      <div class="cursor-pointer flex justify-center pb-4 ">
+        <h1 class="font-bold text-4xl  justify-center-center bg-[#e2e2e2] w-full pt-4 pb-6 pl-4 pr-4 hover:bg-black hover:text-white">Buiness</h1>
+      </div>
+      <div class="cursor-pointer flex justify-center pb-4 ">
+        <h1 class="font-bold text-4xl  justify-center-center bg-[#e2e2e2] w-full pt-4 pb-6 pl-4 pr-4 hover:bg-black hover:text-white">Marketing</h1>
+      </div>
+      <hr class="border-t border-gray-300 my-4">
+    </section>
+    
+    <section id="Thesis-desktop" class="hidden md:block">
+      <h1 class="text-5xl text-center pt-8 pb-8 font-bold">Thesis exhibits</h1>
+      <div class="grid grid-cols-5">
+        <a class="flex flex-col col-span-3 pr-6 pl-6">
+          <video class="rounded-lg  pb-6" controls>
+            <source
+              src="videos/thesis.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <p class="text-5xl font-bold pb-2">Reimagine urban</p>
+          <p class="text-2xl font-thin pb-8">"Dolor sit amet consectetur adipisicing elit.
+            Velit libero eligendi consectetur, dolorum amet harum molestiae voluptatibus.
+            Voluptatum, porro beatae itaque sequi, repellat nostrum a at dolor harum quisquam aperiam."</p>
+        </a>
+        <a class="flex flex-col pl-6 col-span-2 ">
+          <div class="flex flex-col2 bg-[#ffffff] p-4 hover:bg-[#c0c0c0]">
+            <div class="p-3 w-[35%] h-auto">
+              <img src="images/thesis-fisma.jpg"/>
+            </div>
+            <div class="cursor-pointer self-center">
+              <h1 class="font-semibold text-4xl">Fisma: Design and Prototype</h1>
+              <br>
+              <p class="text-2xl font-thin">Designer showcase of new</p>
+              <p class="text-2xl font-thin">prototype product</p>
+            </div>
+          </div>
+          <div class="flex flex-col2 bg-[#ffffff] p-4 hover:bg-[#c0c0c0]">
+            <div class="p-3 w-[35%] h-auto">
+              <img src="images/thesis-now-and-then.jpg"/>
+            </div>
+            <div class="cursor-pointer self-center">
+              <h1 class="font-semibold text-4xl">Now and then</h1>
+              <br>
+              <p class="text-2xl font-thin">Research study about New York</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="Thesis-mobile" class="md:hidden">
+      <h1 class="text-5xl text-center pt-8 pb-8 font-bold">Thesis exhibits</h1>
+        <video class="rounded-lg  pb-6" controls>
+          <source
+              src="videos/thesis.mp4"
+              type="video/mp4"
+          />
+        </video>
+    </section>
+
+    <hr class="border-t border-gray-300 my-4">
+    <footer class="grid grid-cols-2 ">
+      <div class="pl-6">
+        <p>© 2016 Colmar Academy. All rights reserved</p>
+      </div>
+      <div class="flex flex-row justify-end pr-6 gap-6">
+        <a href="#" class="hover:underline">Terms</a>
+        <a href="#" class="hover:underline">Privacy</a>
+      </div>
+      <br>
+      <br>
+      <br>
+    </footer>
+  </body>
+</html>
