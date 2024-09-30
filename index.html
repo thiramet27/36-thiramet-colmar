@@ -13,12 +13,12 @@
         <div class="flex items-center justify-center text-[32px] h-8 w-8">
           <img src="images/ic-logo.svg" alt="logo"/>
         </div>
-        <h1 class="text-2xl font-bold">COLMAR</h1><h1 class="text-2xl font-light">ACADEMY</h1>
+        <h1 class="text-2xl font-bold text-black">COLMAR</h1><h1 class="text-2xl font-light">ACADEMY</h1>
       </a>
       <nav class="flex justify-center w-full lg:w-auto">
         <ul
           id="menu"
-          class="hidden md:flex list-none gap-[16px] w-full md:w-auto md:flex-row md:items-center">
+          class="hidden md:flex list-none gap-[32px] w-full md:w-auto md:flex-row md:items-center">
           <li>
             <a href="#" class=""
               >On campus</a>
@@ -38,7 +38,7 @@
         </ul>
       </nav>
     </header>
-    <header>
+    <header class="md:hidden">
         <nav class="grid grid-cols-4 justify-items-center pt-2.5 pb-2.5 ">
             <img class="block md:hidden " src="images/ic-logo.svg">
             <img class="block md:hidden" src="images/ic-on-campus.svg">
@@ -46,6 +46,105 @@
             <img class="block md:hidden" src="images/ic-login.svg">
         </nav>
     </header>
+    <section id="home-desktop" class="hidden md:flex flex flex-row bg-[#d1cfcc] items-center">
+        <div class="basis-1/2 pt-8 pl-6 pb-8 pr-6">
+            <img src="images/banner.jpg"/>
+        </div>
+        <div class="basis-1/2 pl-8">
+          <p class="font-bold text-6xl">Learn something</p><p class="font-bold text-6xl">new everyday</p>
+          <br><p class="text-2xl">Lorem ipsum dolor sit amet</p><p class="text-2xl">consectetur, adipisicing elit.</p>
+          <br><button id="start_here" class="self-center bg-[#252525] p-3 w-56 text-white ite justify-items-center hover:bg-[#000000] cursor-pointer">Start here</button>
+        </div>
+    </section>
+    <section id="home-mobile"  class="md:hidden bg-[#d4d4d4]">
+      <div class="pt-8 pb-8 ">
+          <img src="images/banner.jpg"/>
+      </div>
+      <div id="Learn something" class="pb-8 pl-3 pr-3 flex flex-col  justify-center ">
+        <p class="font-bold text-5xl">Learn something</p><p class="font-bold text-5xl">new everyday</p>
+        <br><p class="text-2xl">Lorem ipsum dolor sit amet</p><p class="text-2xl">consectetur, adipisicing elit.</p>
+        <br><button id="start_here" class="self-center bg-[#252525] p-3 w-full text-white justify-items-center hover:to-black">Start here</button>
+      </div>
+    </section>
+    <section id="post-desktop" class="hidden md:flex">
+      <div id="semi-section1" class="w-[60%] pl-6 pt-8 pb-8 pr-6 h-1/2">
+        <div>
+          <img src="images/information-main.jpg " class="pb-8"/>
+        </div>
+        <div>
+          <h1 class="pt-6 pb-6 text-5xl font-bold">It doesn't hurt to keep practicing</h1>
+          <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo voluptatibus in amet cum, dolor corporis nihil eum eos optio, quam facere reprehenderit iste quis maxime esse maiores veritatis molestias tenetur."</p>
+          <br><p>Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+      </div>
+      <div id="semi-section2" class="grid grid-rows-3 p-2 pb-8 w-[40%] h-1/2">
+        <div class="flex flex-cols-2 border border-[#d8d8d8] pl-4 pr-4 hover:bg-[#c0c0c0]">
+          <div class="flex flex-col justify-center w-[35%] h-auto">
+            <img src="images/information-orientation.jpg" class=""/>
+          </div>
+          <div class="pl-6 self-center">
+            <h1 class="text-3xl font-bold ">Our campus</h1>
+            <p>Find which campus is close by you</p>
+            <button class="pt-4 font-bold text-xl text-blue-600">Read more</button>
+          </div>
+        </div>
+
+        <div class="flex flex-cols-2 border border-[#d8d8d8] pt-6 pb-6 pl-4 pr-4 h-full hover:bg-[#c0c0c0]">
+          <div class="flex flex-col justify-center w-[35%] h-auto">
+            <img src="images/information-campus.jpg" class=""/>
+          </div>
+          <div class="p-5">
+            <br>
+            <br>
+            <br>
+            <h1 class="text-3xl font-bold">Orientation date</h1>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <br><button class="pt-4 font-bold text-xl text-blue-600">Read more</button>
+          </div>
+        </div>
+
+        <div class="flex flex-cols-2 border border-[#d8d8d8] pt-6 pb-6 pl-4 pr-4 h-full hover:bg-[#c0c0c0]">
+          <div class="flex flex-col justify-center">
+            <img src="images/information-guest-lecture.jpg" class=""/>
+          </div>
+          <div class="p-5">
+            <br>
+            <br>
+            <br>
+            <h1 class="text-3xl font-bold">Our guest lecture</h1>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <br><button class="pt-4 font-bold text-xl text-blue-600">Read more</button>
+          </div>
+        </div>
+      </div>
+      <hr class="border-t border-gray-300 my-4">
+    </section>
+
+    <section id="post-mobile" class="md:hidden grid grid-rows-3">
+      <div class="flex flex-col pt-4 pl-4 pr-4 pb-16 hover:bg-[#d4d4d4]">
+        <img src="images/information-orientation-mobile.jpg" class="pb-6 cursor-pointer"/>
+        <h1 class="text-black font-bold text-3xl pb-1 pl-4 ">Orientation date</h1>
+        <p class="font-thin text-xl pb-1 pl-4">Tue 10/11 & Wed 10/12 8am-3pm</p>
+        <h1 class="text-blue-500 font-semibold text-xl pl-4 cursor-pointer">Read more</h1>
+      </div>
+      <div class="flex flex-col pt-4 pl-4 pr-4 hover:bg-[#d4d4d4]">
+        <img src="images/information-campus-mobile.jpg" class="pb-6 cursor-pointer"/>
+        <h1 class="text-black font-bold text-3xl pb-1 pl-4">Our campus</h1>
+        <p class="font-thin text-xl pb-1 pl-4">Find which campus is close by you</p>
+        <h1 class="text-blue-500 font-semibold text-xl pl-4 cursor-pointer">Read more</h1>
+      </div>
+      <div class="flex flex-col pt-4 pl-4 pr-4 pb-8 hover:bg-[#d4d4d4]">
+        <img src="images/information-guest-lecture-mobile.jpg" class="pb-6 cursor-pointer"/>
+        <h1 class="text-black font-bold text-3xl pb-1 pl-4">Our guest lecture</h1>
+        <p class="font-thin text-xl pb-1 pl-4">Join a keynote with Oliver Sack about music in medical treatment</p>
+        <h1 class="text-blue-500 font-semibold text-xl pl-4 cursor-pointer">Read more</h1>
+      </div>
+      
+    </section>
     
+    <hr class="border-t border-gray-300 my-4 md:hidden">
+
+  
+
   </body>
 </html>
