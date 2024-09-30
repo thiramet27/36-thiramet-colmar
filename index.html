@@ -8,7 +8,7 @@
   </head>
   <body>
     <header
-      class="pt-2.5 pb-2.5 flex items-center justify-between mx-auto border-b flex-col lg:flex-row p-8 h-16">
+      class="hidden md:flex pt-2.5 pb-2.5 flex items-center justify-between mx-auto border-b flex-col lg:flex-row p-8 h-16">
       <a href="#" class="hidden md:flex flex items-center font-semibold text-black">
         <div class="flex items-center justify-center text-[32px] h-8 w-8">
           <img src="images/ic-logo.svg" alt="logo"/>
@@ -36,21 +36,16 @@
               >Sign in</a>
           </li>
         </ul>
-        <div class="grid grid-cols-4 justify-items-center">
-            <img class="block md:hidden " src="images/ic-logo.svg">
-            <img class="block md:hidden" src="images/ic-logo.svg">
-            <img class="block md:hidden" src="images/ic-logo.svg">
-            <img class="block md:hidden" src="images/ic-logo.svg">
-        </div>
-        <!-- Mobile Toggle Button -->
       </nav>
     </header>
-    <div class="grid grid-cols-4 justify-items-center">
-        <img class="block md:hidden " src="images/ic-logo.svg">
-        <img class="block md:hidden" src="images/ic-logo.svg">
-        <img class="block md:hidden" src="images/ic-logo.svg">
-        <img class="block md:hidden" src="images/ic-logo.svg">
-    </div>
+    <header>
+        <nav class="grid grid-cols-4 justify-items-center pt-2.5 pb-2.5 ">
+            <img class="block md:hidden " src="images/ic-logo.svg">
+            <img class="block md:hidden" src="images/ic-on-campus.svg">
+            <img class="block md:hidden" src="images/ic-online.svg">
+            <img class="block md:hidden" src="images/ic-login.svg">
+        </nav>
+    </header>
     
   </body>
 </html>
