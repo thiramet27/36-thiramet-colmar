@@ -1,7 +1,7 @@
 # 36-thiramet-colmar
 This is assesment for bootcamp genaration thailand
 
-![image](asset/Screenshot from 2024-09-30 14-56-52.png)
+![image](asset/Screenshot_from_2024-09-30_14-56-52.png)
 
 
 # Step 1 : Start this project with git clone
@@ -48,9 +48,9 @@ This is assesment for bootcamp genaration thailand
     npm run build
 
 # Step 3 : using extension live server in vs code
-    ![img](36-thiramet-colmar/asset/Screenshot from 2024-09-30 15-09-32.png)
+![img](asset/Screenshot-from-2024-09-30-15-09-32.png)
 
-    Click 'Go live' and go to port 5500
+Click 'Go live' and go to port 5500
 
     ```
     http://localhost:5500/colmar/
